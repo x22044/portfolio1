@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* top */
+#top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#top h1{
+        
+    position: absolute;
+    font-size: 180px;
+    text-shadow:2px 2px 0 #FFF, -2px -2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, 0px 2px 0 #FFF, 0 -2px 0 #FFF, -2px 0 0 #FFF, 2px 0 0 #FFF;
+    color: rgb(85, 85, 85);
+}
+#top img {
+    width: 100%;
+    height: 100%;
+}
+
+/* about */
+#about {
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+#about h2 {
+    margin-left: 2rem;
+    color: rgb(85, 85, 85);
+    font-size: 80px;
+    }
+#about .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .profile .face {
+    margin-right: 70px;
+}
+#about .profile .box {
+    margin-left: 70px;
+    margin:2em 0;
+    padding: 0.5em 1.5em;
+}
+#about .profile p{
+    text-align: center;
+    font-size: 40px;
+}
+/* works */
+#works {
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+#works h2 {
+    margin-left: 2rem;
+    color: rgb(85, 85, 85);
+    font-size: 80px;
+}
+
+#works .title {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 1rem;
+    color: rgb(85, 85, 85);
+}
+#works video {
+    width: 70%;
+}
+#works .video {
+    text-align: center;
+}
+
+/* skill */
+#skill {
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+#skill h2 {
+    margin-left: 2rem;
+    color: rgb(85, 85, 85);
+    font-size: 80px;
+}
+#skill p {
+    color: rgb(85, 85, 85);
+    text-align: right;
+    font-size: 50px;
+    margin-right: 100px;
+}
+#contact {
+    background-color: #000;
+}
+#contact li svg {
+    fill: #FFF !important;
+    width: 60px;
+    height: 60px;
+    color: #FFF;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    transition: all 0.3s;
+}
+#contact li {
+    display: flex;
+    justify-content: center;
+}
+#contact .copyright {
+    color: #FFF;
+    text-align: center;
+}
+/* menu */
+.navbar {
+    margin: auto;
+  }
+  .navbar ul {
+    transform: rotate(-90deg);
+    display: flex;
+    position: fixed;
+    list-style: none;
+    right: -75px;
+    top: 650px;
+  }
+  .navbar ul li {
+    /* ナビゲーションメニュー同士の間隔を指定 */
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .nav-item a {
+    position: sticky;
+    color: #8a8a8a;
+    font-size: 0.9rem;
+    text-decoration: none;
+    /* アニメーション速度を指定 */
+    transition: 0.3s ease-out;
+  }
+  .nav-item a:hover {
+    color: #000000;
+  }
+
+  @media only screen and (max-width: 480px){
+    #top h1 {
+        width: 100%;
+        font-size: 50px;
+        text-align: center;
+        text-shadow: 1px 1px 0 #FFF, -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 0px 1px 0 #FFF, 0 -1px 0 #FFF, -1px 0 0 #FFF, 1px 0 0 #FFF;
+    }
+    #top img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    #about .profile {
+        display: contents;
+    }
+    #about .profile .face {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #about .profile img {
+        width: 70%;
+        height: 70%;
+    }
+    #works {
+        padding-bottom: 10px;
+    }
+    #works ul {
+        display: contents;    
+    }
+    #about h2 {
+        font-size: 50px;
+    }
+
+    #works h2 {
+        font-size: 50px;
+    }
+    
+
+    #skill h2 {
+        font-size: 50px;
+    }
+
+    #about .profile .face {
+        width: 300px;
+        height: 300px;
+    }
+    #about .profile p{
+        font-size: 20px;
+    }
+    
+    
+    
+    #works .title {
+        font-size: 20px;
+    }
+    
+    #skill p {
+        font-size: 20px;
+    }
+  }
+
